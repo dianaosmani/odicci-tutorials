@@ -1,47 +1,149 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
-    <!-- REMOVE THIS METATAG on public launch! -->
-    <meta name="robots" content="noindex">
 
-    <title>Get up and running with your Odicci account</title>
-    <meta name="description" content="Configure a new Odicci account with the different options in the Settings page">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+  <!-- REMOVE THIS METATAG on public launch! -->
+  <meta name="robots" content="noindex">
 
-    <!-- See https://goo.gl/OOhYW5 -->
-    <link rel="manifest" href="/manifest.json">
+  <title>Get up and running with your Odicci account</title>
+  <meta name="description" content="Index of Odicci tutorials">
 
-    <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
-    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-    <link rel="import" href="/bower_components/codelab-components/google-codelab-elements.html">
-    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
-    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
-    <style>
-      body {
-        font-family: "Roboto",sans-serif;
-        background-color: white;
+  <!-- See https://goo.gl/OOhYW5 -->
+  <link rel="manifest" href="/manifest.json">
+
+  <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+  <link rel="import" href="/bower_components/paper-card/paper-card.html">
+  <link rel="import" href="/bower_components/paper-button/paper-button.html">
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <style>
+    body {
+      font-family: "Roboto", sans-serif;
+      background-color: white;
+    }
+    
+    header {
+      text-align: center;
+    }
+    
+    header h1 {
+      font-weight: 300;
+    }
+    
+    .container {
+      margin: 0 auto;
+      max-width: 900px;
+    }
+    
+    paper-card {
+      vertical-align: middle;
+      width: calc(100% / 3 - 10px);
+      margin: 10px 4px 10px 3px;
+    }
+    
+    @media screen and (max-width: 670px) {
+      .container {
+        text-align: center;
       }
-    </style>
-  </head>
-  <body>
+      paper-card {
+        width: 80%;
+        margin: 10px auto;
+      }
+    }
+  </style>
 
-  <google-codelab 
-      title="Index"
-      environment="web"
-      feedback-link="https://github.com/codelab-tf-got/codelab-tf-got.github.io/issues">
+  <!-- Style for custom elements -->
+  <style is="custom-style">
+    a {
+      color: black;
+      text-decoration: none;
+    }
+    
+    paper-button {
+      --paper-button-ink-color: #ffa046;
+    }
+    
+    paper-card {
+      --paper-card-header: {
+        background-color: #ffa046;
+      }
+      --paper-card-content: {
+        height: 100px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+      }
+      --paper-card-header-text: {
+        font-size: 16px;
+        color: white;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+      }
+    }
+  </style>
 
-    <!-- STEP 1: OVERVIEW -->
-    <google-codelab-step 
-      label="Index" 
-      step="1" 
-      duration="5">
-      
 
-      <a href="./get-up-and-running-with-your-odicci account.html" target="_blank" rel="noopener">Get up and running with your Odicci account</a> <br>
-      <a href="./getting-started-with-acquire-experiences.html" target="_blank" rel="noopener">Getting started with Acquire Experiences</a> <br>
-      <a href="./engaging-with-your-customers.html" target="_blank" rel="noopener">Engaging with your customers</a> <br>
-      <a href="./viewing-reports.html" target="_blank" rel="noopener">Viewing Reports</a>
 
-    </google-codelab-step>
+</head>
+
+<body>
+
+  <header>
+    <h1>Odicci Tutorials Preview</h1>
+
+  </header>
+
+  <div class="container">
+    <paper-card heading="Getting started with Experiences">
+      <div class="card-content">
+        To be completed: write a short description of the tutorial
+      </div>
+      <div class="card-actions">
+        <a href="./get-up-and-running-with-your-odicci-account.html" target="_blank">
+          <paper-button class="custom">START</paper-button>
+        </a>
+      </div>
+    </paper-card>
+
+    <paper-card heading="Tutorial HERE">
+      <div class="card-content">
+        To be completed: write description of the tutorials
+      </div>
+      <div class="card-actions">
+        <paper-button>START</paper-button>
+      </div>
+    </paper-card>
+    <paper-card heading="Tutorial HERE">
+      <div class="card-content">
+        To be completed: write description of the tutorials
+      </div>
+      <div class="card-actions">
+        <paper-button>START</paper-button>
+      </div>
+    </paper-card>
+    <paper-card heading="Tutorial HERE">
+      <div class="card-content">
+        To be completed: write description of the tutorials
+      </div>
+      <div class="card-actions">
+        <paper-button>START</paper-button>
+      </div>
+    </paper-card>
+    <paper-card heading="Tutorial HERE">
+      <div class="card-content">
+        To be completed: write description of the tutorials
+      </div>
+      <div class="card-actions">
+        <paper-button>START</paper-button>
+      </div>
+    </paper-card>
+
+  </div>
+
+
+
+
+</body>
+
+</html>
