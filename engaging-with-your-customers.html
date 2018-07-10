@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <!-- REMOVE THIS METATAG on public launch! -->
+    <meta name="robots" content="noindex">
+
+    <title>Getting started with Acquire Experiences</title>
+    <meta name="description" content="Getting started with Oddici Acquire experiences">
+
+    <!-- See https://goo.gl/OOhYW5 -->
+    <link rel="manifest" href="/manifest.json">
+
+    <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="import" href="/bower_components/codelab-components/google-codelab-elements.html">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+    <style>
+      body {
+        font-family: "Roboto",sans-serif;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+
+  <google-codelab 
+      title="Engaging with your customers"
+      environment="web"
+      feedback-link="https://github.com/codelab-tf-got/codelab-tf-got.github.io/issues">
+
+    <!-- STEP 1: OVERVIEW -->
+    <google-codelab-step 
+      label="Overview" 
+      step="1" 
+      duration="5">
+
+      <i>
+        How to create a new Experience from scratch as well as using a template
+      </i>
+
+      <p>
+        In this tutorial we will give you a step by step guide to the use of all the tools required to create an email template from scratch as well as using one of the templates provided.  
+      </p>
+      <p>
+        On the Engage homepage you will find a table of all your email templates with action buttons on each template allowing you to:
+      </p>
+      <ul style="list-style-type:none">
+        <li>
+          <i class="fa fa-pencil-square-o" aria-hidden="true" style="color:#FFA046"></i> Edit
+        </li>
+        <li>
+          <i class="fa fa-trash" aria-hidden="true" style="color:#FFA046"></i> Delete
+        </li>
+      </ul>
+
+      <img src="./img/engaging-with-your-customers/01_overview_01.png" alt="Email templates table">
+
+    </google-codelab-step>
+
+    <!-- STEP 2: CREATING A NEW EXPERIENCE -->
+    <google-codelab-step 
+      label="Creating a new Email Template from scratch" 
+      step="2" 
+      duration="5">
+
+      <ol>
+        <li>
+          Click on <b style="color: #FFA046">new</b> on the top right of the Email Templates table.
+        </li>
+        <li>
+          Click on <b style="color: #FFA046">From Scratch</b>
+        </li>
+        <img src="./img/engaging-with-your-customers/02_scratch_01.png" alt="From Scratch">
+        <li>
+          The setup page will appear, fill in the fields required and click on the <b>Next</b> button to continue.
+        </li>
+        <li>
+          Once you have configured your setup, you will be redirected to the Build section where you can write or paste you HTML for your email. 
+        </li>        
+        <img src="./img/engaging-with-your-customers/02_scratch_02.png" alt="Email builder">
+        <aside class="special">
+          You may wish to use field tags inside your HTML which will capture the data of your chosen field and automatically input it in your email when sent. To do this, choose field tags from the drop down list on the right
+        </aside>
+        <li>
+          Click on the <b>Save</b> button to save the template.
+        </li>
+        <li>
+          To test your email, simply click on the <b>Send test email</b> button and enter an email address where you can receive it. 
+        </li>
+        <li>
+          To preview what your email will look like on different devices, click on the <b>Preview</b> button. <br>
+          <aside class="special">
+            Your template will be previewed on a laptop. You can change this to a tablet or a phone by navigate between the options on the top right. 
+          </aside>
+          <img src="./img/engaging-with-your-customers/02_scratch_03.png" alt="Email builder">
+          <br><br>
+          Click the back button to navigate back to setup and back to the list of templates.
+        </li>
+        <!-- <li>
+          To search for a template click on <b style="color: #FFA046">view all</b> and use the search criteria to search by name. 
+        </li> -->
+      </ol>
+
+
+
+    </google-codelab-step>
+
+    <!-- STEP 3 -->
+    <google-codelab-step 
+      label="Creating a new Email Template from a template" 
+      step="3" 
+      duration="5">
+
+      <ol>
+        <li>
+          Click on <b style="color: #FFA046">new</b> on the top right of the Email Templates table.
+        </li>
+        <li>
+          Click on <b style="color: #FFA046">From template</b>
+        </li>
+        <img src="./img/engaging-with-your-customers/02_template_01.png" alt="From Template">
+        <li>
+          The setup page will appear, fill in the fields required and click on the <b>Next</b> button to continue.
+        </li>
+        <li>
+          Once you have configured your setup, you will be able to choose a template style. 
+        </li> 
+        <img src="./img/engaging-with-your-customers/02_template_02.png" alt="Choose Template"> 
+        <li>
+          You can now add text and images to your chosen template by simply clicking on the text areas or the image. The settings for each component will appear on the right.
+        </li>      
+        <img src="./img/engaging-with-your-customers/02_template_03.png">
+      </ol>
+
+    </google-codelab-step>
+
+  </google-codelab>
+  <!-- ANALYTICS -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-121427912-1', 'auto');
+    
+    (function(){
+      var codelab = document.querySelector('google-codelab');
+      codelab.addEventListener('codelab-step-changed', function(e) {
+        ga('send', {
+          hitType: 'pageview',
+          title: e.detail.step.title,
+          page: '#' + e.detail.step.id
+        });
+      });
+    })();
+  </script>
+    
+  </body>
+</html>

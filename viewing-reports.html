@@ -1,0 +1,141 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <!-- REMOVE THIS METATAG on public launch! -->
+    <meta name="robots" content="noindex">
+
+    <title>Report</title>
+    <meta name="description" content="Viewing Reports">
+
+    <!-- See https://goo.gl/OOhYW5 -->
+    <link rel="manifest" href="/manifest.json">
+
+    <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="import" href="/bower_components/codelab-components/google-codelab-elements.html">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+    <style>
+      body {
+        font-family: "Roboto",sans-serif;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+
+  <google-codelab 
+      title="Viewing Reports"
+      environment="web"
+      feedback-link="https://github.com/codelab-tf-got/codelab-tf-got.github.io/issues">
+
+    <!-- STEP 1: OVERVIEW -->
+    <google-codelab-step 
+      label="Overview" 
+      step="1" 
+      duration="5">
+
+      <p>
+        In this tutorial we will give you a step by step guide to viewing reports for all your Experiences. This will be reports for live campaigns, finished campaigns and those still running. 
+      </p>
+
+      <img src="./img/viewing-reports/01_overview_01.png" alt="Report page">
+
+    </google-codelab-step>
+
+    <!-- STEP 2: SEARCHING FOR AN ENTRY -->
+    <google-codelab-step 
+      label="Searching for an entry" 
+      step="2" 
+      duration="5">
+
+      <i>
+        How to search the whole database for an entry across all Acquire Experiences
+      </i>
+
+      <ol>
+        <li>
+          Type part or all the email address in the search bar provided.
+        </li>
+        <img src="./img/viewing-reports/02_search_01.png" alt="Search entry">
+        <li>
+          Click on the Search icon button. The search results will appear in a table format below the search bar.
+        </li>
+      </ol>
+
+    </google-codelab-step>
+
+    <!-- STEP 3 -->
+    <google-codelab-step 
+      label="Viewing reports for a particular Experience" 
+      step="3" 
+      duration="5">
+
+      <ol>
+        <li>
+          When in the Report tab, you have a table of all the Acquire Experience.
+        </li>
+        <li>
+          Choose what Experience to view reports for by click on <b style="color: #ffa046">View Reporting.</b>
+        </li> 
+        <img src="./img/viewing-reports/03_viewreport_01.png" alt="Choose Template"> 
+        <aside class="special">
+          The Status column informs you at what stage the Experience is on:
+          <ul>
+            <img src="./img/viewing-reports/disk.png" style="width: 22.5px;height: 17.3px; float: left; margin-top: 2.5px; margin-right: 5px;"> Experience is running (live) <br>
+            <img src="./img/viewing-reports/pause.png" style="width: 22.5px;height: 17.3px; float: left; margin-top: 2.5px; margin-right: 5px;"> Experience is paused <br>
+            <img src="./img/viewing-reports/workinprogress.png" style="width: 22.5px;height: 17.3px; float: left; margin-top: 2.5px; margin-right: 5px;"> Experience is under construction <br>
+            <img src="./img/viewing-reports/finished.png" style="width: 22.5px;height: 17.3px; float: left; margin-top: 2.5px; margin-right: 5px;"> Experience has finished <br>
+          </ul>
+        </aside> 
+        <li>
+          You will be taken to the <b>Overview</b> of your chosen campaign where you will see a histogram of the overall performance of the experience. <br> <br>
+          The histogram shows Unique Impressions, Impressions, Drop Offs and Completed Entries. <br> <br>
+          This page allows you to also view charts for Weekdays, Hours, Traffic Sources, Devices and Drop Offs. To do this click on the icons above the histogram. <br> <br>
+          <img src="./img/viewing-reports/03_viewreport_02.png"> <br> 
+          <aside class="special">
+            A table representation of the histogram is also shown in the overview, detailing the total, average per day, highest in a day and the best day. 
+          </aside>
+        </li>    
+        <li>
+          Click on <b>All Entries</b> on the left sidebar for a list of all completed entries. A table will appear with all the completed entries where you can Configure Table to choose which columns you wish to show and which to hide. <br> <br>
+          <img src="./img/viewing-reports/03_viewreport_03.png"> <br> <br>
+          To search for an entry, choose set the search criteria by <b>Select Field</b>, and type in the corresponding data in the search bar. Click the <b>Search</b> icon. <br> <br>
+          To delete an entry, simply check the box on the entry you wish to delete and click on <b>Delete Selected</b> button. You can delete multiple entries in one go by checking the boxes for all the entries you wish to delete. <br> <br>
+          You may also Export the data by clicking on the <b>Export</b> button. This will export in a CSV file.
+        </li>  
+        <li>
+          On the left sidebar, you can navigate to Prizes to view an overview chart of the different prizes redeemed and available. <br> <br>
+          <img src="./img/viewing-reports/03_viewreport_04.png"> <br> <br>
+          To view the table of completed entries for each prize, click on the prize and a table will appear, containing all the completed entries tied to that prize. 
+        </li>
+      </ol>
+
+    </google-codelab-step>
+
+  </google-codelab>
+  <!-- ANALYTICS -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-121427912-1', 'auto');
+    
+    (function(){
+      var codelab = document.querySelector('google-codelab');
+      codelab.addEventListener('codelab-step-changed', function(e) {
+        ga('send', {
+          hitType: 'pageview',
+          title: e.detail.step.title,
+          page: '#' + e.detail.step.id
+        });
+      });
+    })();
+  </script>
+    
+  </body>
+</html>

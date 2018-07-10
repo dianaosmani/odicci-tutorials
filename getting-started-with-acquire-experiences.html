@@ -1,0 +1,658 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=yes">
+    <!-- REMOVE THIS METATAG on public launch! -->
+    <meta name="robots" content="noindex">
+
+    <title>Getting started with Acquire Experiences</title>
+    <meta name="description" content="Getting started with Oddici Acquire experiences">
+
+    <!-- See https://goo.gl/OOhYW5 -->
+    <link rel="manifest" href="/manifest.json">
+
+    <script src="/bower_components/webcomponentsjs/webcomponents-lite.js"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <link rel="import" href="/bower_components/codelab-components/google-codelab-elements.html">
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+    <style>
+      body {
+        font-family: "Roboto",sans-serif;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+
+  <google-codelab 
+      title="Getting started with Acquire Experiences"
+      environment="web"
+      feedback-link="https://github.com/codelab-tf-got/codelab-tf-got.github.io/issues">
+
+    <!-- STEP 1: OVERVIEW -->
+    <google-codelab-step 
+      label="Overview" 
+      step="1" 
+      duration="5">
+      <p>
+      In this tutorial, we will give you a step by step guide to the use of all the tools required to create an <a href="https://app.odicci.com/acquire/campaigns" target="_blank" rel="noopener">Odicci Experience</a>. from scratch, as well as using one of the templates provided. 
+      </p>
+
+      <img src="./img/getting-started-with-acquire-experiences/01_home.png" alt="Homepage">
+
+      <p>
+        On the homepage you will find thumbnails of all your Experiences with action buttons on each Experience that allows you to <b><span class="glyphicon glyphicon-pencil"></span> Edit</b>, &nbsp;<b><span class="glyphicon glyphicon-eye-open"></span> Preview</b>, &nbsp; <b><i class="fa fa-clone"></i> Duplicate</b>, &nbsp; <b><span class="glyphicon glyphicon-trash"></span> Delete</b> and see the &nbsp;<b><i class="fa fa-bar-chart"></i> Reports</b> of your experiences.
+      </p>
+      
+      <h2 class="checklist">What You&#39;ll Learn</h2>
+
+      <ul class="checklist">
+        <li>Familiarize yourself with <a href="https://app.odicci.com/acquire/campaigns" target="_blank" rel="noopener">Odicci Experiences</a>.</li>
+        <li>Setting up a Experience from scratch.</li>
+        <li>Building your experience's UI.</li>
+        <li>Setting up Codes that users can input to earn prizes.</li>
+        <li>Confirming and launching your experience.</li>
+      </ul>
+
+      <h2 class="checklist">What You&#39;ll Need</h2>
+      <ul>
+        <li>A computer connected to the internet</li>
+        <li>An Odicci Acount</li>
+      </ul>
+
+    </google-codelab-step>
+
+    <!-- STEP 2: CREATING A NEW EXPERIENCE -->
+    <google-codelab-step 
+      label="Creating a new Experience" 
+      step="2" 
+      duration="5">
+
+      <img src="./img/getting-started-with-acquire-experiences/02_setup_01.png" alt="Create a new Experience">
+
+      <p>From the homepage, click on "Create a new Experience", and choose "Create from Scratch" on the top right.</p>
+
+      <h2>Selecting type of Experience</h2>
+
+      <br>
+
+      <img src="./img/getting-started-with-acquire-experiences/02_setup_02.png" alt="Create a new Experience">
+
+      <aside class="special">
+        <p>
+          The following kind of experiences are already ready to create:
+        </p>
+        <ul>
+          <li><b>Prize draw</b>: TBC.— description here.</li>
+          <li><b>Instant win</b>: description here.</li>
+          <li><b>Survey</b>: description here.</li>
+          <li><b>Landing page</b>: description here.</li>
+          <li><b>Calendar</b>: description here.</li>
+        </ul>
+      </aside>
+
+    </google-codelab-step>
+
+    <!-- STEP 3 -->
+    <google-codelab-step 
+      label="Setup" 
+      step="3" 
+      duration="5">
+
+      <h2>Experience info</h2>
+
+      <p>
+        You'll start completing general information about your experience, such as the Name, URL, ID and Dates when the experience will be running.
+      </p>
+
+      <img src="./img/getting-started-with-acquire-experiences/03_setup_01.png" alt="Configure your Experience Settings">
+
+      <ol>
+        <li>Give your Experience a name</li>
+        <li>You can choose to change the URL of your Experience</li>
+        <li>Give your Experience an ID</li> 
+        <li>Select the start and end dates of your Experience</li>
+      </ol>
+
+      <h2>Options</h2>
+
+      <img src="./img/getting-started-with-acquire-experiences/03_setup_02.png" alt="Configure your Experience Settings">
+
+      <ul>
+        <li><b>CRM Integration</b>: this option allows you to set up integrations with CRMs such as Mailchimp, Adestra, Dotmailer, Pure360, Salesforce Marketing Cloud or Bronto. You’ll be able to configure these later in the “Confirm” step.</li>
+        <li><b>Multilingual Campaign</b>: allow your Experience to be translated into different languages. Once you complete this step, new tab (Locale) will appear in the progress bar, where you will be able to chose the languages you would like your Experience to be translated in.</li>
+        <li><b>Use unique codes</b>: you may want to give away vouchers with codes your clients can use to earn specific prizes. Choose whether you want to use codes for your Experience. 
+      </ul>
+
+      <aside class="warning">
+        <p>
+          <strong>Important:</strong> If you choose to use <i>Unique Codes</i> for your experience <b>you won't be able to change this option later</b>.
+        </p>
+      </aside>
+      
+      <ul>
+        <li><b>Add “help” link at the bottom</b>: allows you to add a link for customers to use when they experience any difficulties using the Experience. All help requests are directed to HelpScout.</li>
+        <li><b>Add “odicci’ link at the bottom</b>: allow customers to directly visit Odicci’s website</li>
+        <li><b>Restrict campaign access</b>: allows to restrict customers that use certain IP address or Email address to enter your Experience. You can also specify a time interval where these restrictions have effect (that restrict access to your campaign for a certain number of minutes, hours, weeks or months). To configure that up, check the Release box and choose your time interval. You can set up a customised Restriction Message to let your customers know why they are not able to enter you Experience. Once you're ready, Click Done.</li>
+        <li><b>Terms and Conditions</b>: To add your Terms and Conditions, click on the pencil icon  and a box will appear. Paste your Terms and Conditions here and format them as you wish and clic Save.</li>
+        <li><b>Privacy Policy</b>: To add your Privacy Policy, click on the pencil icon  and a box will appear. Paste your Privacy Policy here and format as you wish and clic Save.</li>
+        <li><b>FAQ</b>: To add your Frequently Asked Questions, click on the pencil icon and a box will appear. Paste your Frequently Asked Questions here and format them as you wish.</li>
+        <li><b>Stop/Pause Message</b>: When your Experience has come to an end, customers may still visit your Experience.</li>
+      </ul>
+     
+      <aside class="special">
+        <p>
+          <b>Congratulations!</b> Once you have finished this section, you are already able to configure the content of your Experience.
+        </p>
+      </aside>
+
+    </google-codelab-step>
+
+    <!-- STEP 4: PRIZES -->
+    <google-codelab-step 
+      label="Prizes" 
+      step="4" 
+      duration="5">
+
+      <aside class="warning">
+        <p>
+          If you did not create an experiences that include prizes, this option won't show up. Feel free to <b>navigate to the next section of this tutorial</b>.
+        </p>
+      </aside>
+
+      <p>
+        Odicci experiences are the best tool to create raffles and prize giveaways. In this section, you'll be able to configure different prize types, and set up giveaway rules that allows you to control the regularity on what your users will be able to receive them.
+      </p>
+
+      <h2>Prizes Table</h2>
+
+      <p>
+        In this section you can create different prizes that will be given away in your experience:
+      </p>
+
+      <img src="./img/getting-started-with-acquire-experiences/04_prizes_01.png" alt="Prize Table">
+
+      <aside class="special">
+        <p>
+          <b>Note:</b> Freshly created campaigns are created with 1 winner and 1 loser prize types by default. The default amount of these types are 90 winners prizes and 10 loser prizes. You will be able to customize these prizes with a custom name, quantity and image, between others.
+        </p>
+      </aside>
+
+      <h2>Customizing prizes</h2>
+
+      <p>
+        You can add new prizes or edit the ones that are included by default by clicking in the <i>"Add New"</i>or <i>"Edit"</i> butons, respectively. <br><br>
+      </p>
+
+      <img src="./img/getting-started-with-acquire-experiences/04_prizes_02.png" alt="Add or edit prizes">
+
+      <p>In the edit page you'll be able to:</p>
+
+      <ul>
+        <li>Choose a <b>name</b> for your prize</li>
+        <li>Select the <b>prize type</b> (either winner or loser)</li>
+        <li>Change the <b>quantity</b> of prizes available</li> 
+      </ul>
+
+      <aside class="special">
+        <p>
+          Select ‘Unlimited’ if this is the prize given by default. When this option is selected and all other prizes have been redeemed, your Experience will always result to this prize. <b>There can only be one "Unlimited" prize per Experience</b>. 
+        </p>
+      </aside>
+          
+      <ul>
+        <li>You can upload <b>Voucher Codes</b> to be granted to the winners of this prize<sup>(*)</sup></li>
+        <li>Choose the <b>Email Template</b> that will be sent to the user that wins this price</li>
+        <li>Send an <b>email notification</b> to any email address when this prize has been granted to an user</li>
+        <li>Filter <b>physical locations</b> (stores) where this prize can be reedemed. (You must have configured )</li>
+        <li>Select the <b>image</b> that will be displayed to the user who wins this prize</li>
+      </ul>
+
+      <h2>Voucher Codes</h2>
+
+      <p>
+        If you want to distribute voucher codes for the winners of a particular prize (for instance, a discount code), you can upload a CSV containing the values in the Prize’s configuration page. These values can be included in the email template related with that prize.
+      </p>
+
+      <aside class="warning">
+        <p>
+          Do not confuse this with the feature “Codes” (that allows you to restrict the access to your experiences using codes). You’ll learn more about Codes in the next section of this tutorial.
+        </p>
+      </aside>
+
+      <br> <br>
+
+      <h2>Prize Rules</h2>
+
+      <p>
+        Prize rules lets you define the number of prizes of any kind that should be granted to users on a certain regularity. From the table you can edit, enable/disable and delete prize rules.
+      </p>
+
+      <img src="./img/getting-started-with-acquire-experiences/04_prizes_03.png" alt="Prize rules">
+
+      <p>To add a new prize rule, click on <i>"New"</i> at the top of the table, and choose a <b>name</b> for the rule. <br><br>Choose the <b>prize</b> that you want to apply this rule to, <b>number of prizes</b> to be granted each time and the <b>regularity</b> of the rule. To save the rule, click <i>"Save"</i>.</p>
+
+      <img src="./img/getting-started-with-acquire-experiences/04_prizes_04.png" alt="Prize rules">
+
+
+    </google-codelab-step>
+
+    <!-- STEP 5: CODES -->
+    <google-codelab-step 
+      label="Codes" 
+      step="5" 
+      duration="5">
+
+      <aside class="warning">
+        <p>
+          If you did not choose to <i>Use Unique Codes</i> in the Setup step, this option won't show up. Feel free to <b>navigate to the next section of this tutorial</b> or go back to the Setup and click on «Use Unnique Codes».
+        </p>
+      </aside>
+
+      <p>
+        Codes are a way to restrict the access to your experiences to specific customers, who will need to input a code that you share with them (digitally or physically). Every code can only be used once.
+      </p>
+
+      <p>
+        To get started with using Unique codes, click on <b>Create unique codes</b>. 
+      </p>
+
+      <img src="./img/getting-started-with-acquire-experiences/05_codes_01.png" alt="Create Unique Codes">
+
+      <p>A modal will appear, click on <b>Export Codes</b></p>
+
+      <img src="./img/getting-started-with-acquire-experiences/05_codes_02.png" alt="Export Codes">
+
+      <p>
+        You will be asked if you would like to export a percentage of additional codes. Type in the box provided the percentage of additional codes you would like to export. If you do not want additional codes, set this to 0. Click <b>Generate</b>.
+      </p>
+
+      <!-- <img src="./img/05_codes_03.png" alt="Additional Codes"> --> 
+
+      <p>
+        Your export will be downloaded to your computer in a CSV format in which you can now import by clicking on <b>Import codes from CSV</b>.
+      </p>
+
+      <img src="./img/getting-started-with-acquire-experiences/05_codes_04.png" alt="Import codes from CSV">
+
+      <p>Upload your CSV file and click on <b>Import Codes</b>.</p>
+
+      <img src="./img/getting-started-with-acquire-experiences/05_codes_05.png" alt="Choose file">
+
+      <aside class="warning">
+        <p>
+          If your campaign has a Loser prize, you will also need to upload Loser Codes. You can do that by following the same steps from above. 
+        </p>
+      </aside>
+
+      <p>
+        Your codes will appear in a table below showing the Codes and details such as the prize type, when it was created and the status; if the code has not been redeemed this will remain <i>Unclaimed. </i>When the code has been redeemed you are able to see who it was redeemed by and when.
+      </p>
+
+      <img src="./img/getting-started-with-acquire-experiences/05_codes_06.png" alt="Table of Codes">
+
+        <p>
+          Actions you can perform on codes are <i>Delete</i> and <i>Reset</i>.
+        </p>
+      <aside class="special">
+        <p>
+          The <i>Reset</i> option may be used if you need to use a code for testing purposes but then need to make it available again, you can do so by resetting the code.
+        </p>
+      </aside>
+
+    </google-codelab-step>
+
+    <!-- STEP 6 -->
+    <google-codelab-step 
+    label="Build your Experience's UI" 
+    step="6" 
+    duration="5">
+
+    <aside class="special">
+      <p>
+        A new experience will always start with 2 frames by default, one Form frame and one Success frame (these are on the left sidebar). The Form frame will always have one text field and one submit button.
+      </p>
+    </aside>
+
+    <h2>
+      The Left Sidebar
+    </h2>
+
+    <p>
+      The Left Sidebar has 3 sections you can switch between along the top of the bar:
+    </p>
+
+    <ul>
+      <p style="display: inline-block; margin-left: -37px">
+        <i class="fa fa-clone" aria-hidden="true"> </i> Frames &nbsp;
+        <i class="fa fa-paint-brush" aria-hidden="true"></i> Design &nbsp;
+        <i class="fa fa-magic" aria-hidden="true"></i> Effects &nbsp;
+      </p>
+    </ul> 
+
+    <!-- <img src="./img/06_build_01.png" alt="Build-Left Sidebar"> -->
+
+    <p>
+      <i>Adding and Managing Frames</i>
+    </p>
+
+    <ol>
+      <li>Actions available on Frames are <b><i class="fa fa-eye" aria-hidden="true"></i> Hide</b>, 
+        &nbsp;<b><i class="fa fa-files-o" aria-hidden="true"></i> Duplicate</b> and &nbsp;<b><i class="fa fa-trash-o" aria-hidden="true"></i> Delete</b></li>
+      <li>To add more frames, click on the  <i class="fa fa-plus" aria-hidden="true" style="color:#FFA046"></i> icon</li>
+      <li>A pop up will appear with the different frames available: </li>
+      <img src="./img/getting-started-with-acquire-experiences/06_build_03.png" alt="Choose a frame">
+      <li>Click on the frame you want to add</li>
+      <li>To rearrange the order of the frames, click and drag the frame to the desired position or click on the arrows on top of your frame</li>
+    </ol>
+  
+    <p>
+      <i>Managing the Design of your Experience</i>
+    </p>
+
+    <img src="./img/getting-started-with-acquire-experiences/06_build_04.png">
+
+    <aside class="special">
+      Navigate to the second tab of the Left Sidebar <i class="fa fa-paint-brush" aria-hidden="true"></i>
+    </aside>
+
+    <p>
+      This section includes the options to:
+    </p>
+
+    <ol>
+      <li>Add a logo</li>
+        <p>
+          Click on and select your image from your Gallery or Upload on
+        </p>
+      <li>Add an image as a background</li>
+        <p>
+          Click on <b>Add an Image</b> and select your image from your Gallery or Upload on
+        </p>
+      <li>Add an image as a background</li>
+        <p>
+          Click on <b>Add an Image</b> and select your image from your Gallery or Upload on
+        </p>
+      <li>Change the colour of text, buttons, background</li>
+        <p>
+          Click on the colour icon and pick the desired colour by typing in the colour code or toggle with the colour picker to choose your colour
+        </p>
+      <li>Change the font styles </li>
+        <p>
+          Click on <b>Default</b> and select a font style from the dropdown list 
+        </p>
+      <li>Change the header/footer background colour</li>
+        <p>
+          Click on the colour icon and pick the desired colour by typing in the colour code or toggle with the colour picker to choose your colour
+        </p>
+      <li>Set the header and footer font size</li>
+        <p>
+          Click inside the box below <b>footer font size</b> to type or use the arrows in the box to change the size. Follow the same step to change the font size for the header. 
+        </p>
+    </ol>
+
+    <aside class="special">
+      To add a different image for the Mobile version, follow the same steps.
+    </aside>
+
+    <p>
+      <i>Adding Effects</i>
+    </p>
+
+    <ol>
+      <li>
+        Click on the third tab on on the Left Sidebar <i class="fa fa-magic" aria-hidden="true"></i>
+      </li>
+      <li>
+        Click on the effect you wish to use. You will see the change immediately. 
+      </li>
+      <li>
+        To remove the effect click on <b>No Effect</b>
+      </li>
+    </ol>
+
+    <h2>The Right Sidebar</h2>
+
+    <p>
+      The Left Sidebar has 2 sections you can switch between along the top of the bar:
+    </p>
+
+    <ul>
+      <p style="display: inline-block; margin-left: -37px">
+        <i class="fa fa-pencil-square-o" aria-hidden="true"></i> Edit Frames &nbsp;
+        <i class="fa fa-sliders" aria-hidden="true"></i> Edit Frames (Advanced)&nbsp;
+      </p>
+    </ul> 
+
+    <p>
+      <i>Editing Frames</i>
+    </p>
+
+    <ol>
+      <li>
+        To add text, an image or a video, click on:
+      </li>
+      <p style="float: left; margin-top: 2.5px; margin-right: 10px;">
+        <img src="./img/getting-started-with-acquire-experiences/06_build_06.png" style="width: 17px;height: 13px; margin-bottom: 6px;"> For Text &nbsp; <br>
+        <i class="fa fa-picture-o" aria-hidden="true" style="color:#FFA046"></i> For Images &nbsp; <br>
+        <i class="fa fa-film" aria-hidden="true" style="color:#FFA046"></i> For Videos &nbsp; <br> 
+      </p> 
+      <br>
+      <br>
+      <br>
+      <br>
+      <li>
+        To preview your experience, click on <b style="color:#FFA046">View Online</b>
+      </li>
+    </ol>
+
+    <p>
+      <i>Editing Frames (Advanced</i>
+    </p>
+
+    <ol>
+      <li>
+        To make the frame pre-filled, check the box <i class="fa fa-check-square" aria-hidden="true" style="color:#1976d2"></i>
+        <aside class="warning">
+          When checking the box, you will notice <b style="color:#FFA046">View URL</b>will appear. This option is only available when an email field is present in the frame. Clicking on View URL will give you the option to copy the URL. 
+        </aside>
+      </li>
+      <li>
+        To hide the logo, check the box <i class="fa fa-check-square" aria-hidden="true" style="color:#1976d2"></i> 
+      </li>
+      <li>
+        To fix the button to the bottom of the page, check the box <i class="fa fa-check-square" aria-hidden="true" style="color:#1976d2"></i>
+      </li>
+      <aside class="warning">
+        Note that hiding the logo and fixing the button to the bottom of the page will only be applied to the frame you are currently on.
+      </aside>
+      <li>
+        To set a different background for the frame you are working on, click on Add an image. You can do this for the desktop and the mobile version.
+      </li>
+    </ol>
+
+    </google-codelab-step>
+
+    <!-- STEP 7 -->
+    <google-codelab-step 
+    label="Locale: translating your Experience" 
+    step="7" 
+    duration="5">
+
+    <aside class="warning">
+      <p>
+        If you did not choose to use a <i>Multilingual Campaign</i> in the Setup step, this option won't show up. Feel free to <b>navigate to the next section of this tutorial</b>.
+      </p>
+    </aside>
+
+    <h2>
+      Locale
+    </h2>
+
+    <ol>
+      <li>
+        To select which languages to translate your experience to, simply tick the box for the appropriate country. Click on the <b>SAVE</b> button to save your chosen languages.<br>
+        <br>
+        <img src="./img/getting-started-with-acquire-experiences/07_locale_01.png">
+      </li>
+      <li>
+        The next screen is where you can enter your translations for every element in your experience. To switch between the chosen languages, click on the dropdown for <b>Set locale.</b> <br>
+        <br>
+        <img src="./img/getting-started-with-acquire-experiences/07_locale_02.png">
+      </li>
+      <li>
+        To change or add more languages, click on the <b style="color:#FFA046">edit</b> button.
+      </li>
+    </ol>
+
+    </google-codelab-step>
+
+    <!-- STEP 8 -->
+    <google-codelab-step 
+    label="Confirm and Launch your Campaign" 
+    step="8" 
+    duration="5">
+
+    <h2>
+      Confirm
+    </h2>
+
+    <p>
+      This section will inform you of any errors or warnings of the status of your Experience and allow you to set up CRM Integration. You may also set up Data Deletion and Analytics Integration (Advanced Options). <br>
+      <br>
+      Publish Options are also available for set up in this section.
+    </p>
+
+    <img src="./img/getting-started-with-acquire-experiences/08_confirm_01.png">
+
+    <p><b>Status</b></p>
+
+    <i>
+      Error and Warning Messages
+    </i>
+    <p>
+      Each error or warning will have a button that when clicked will direct you to where action is required. For example clicking on the Settings button for the Privacy Policy warning message, will take you back to the Setup tab where you can set up the Privacy Policy.
+    </p>
+
+    <aside class="warning">
+      If you have error messages for your Experience, the <i>Publish</i> button will disappear. Warning messages will still allow you to publish your experience.
+    </aside>
+
+    <i>CRM Integration setup – Dotmailer Example</i><br><br>
+
+    <img src="./img/getting-started-with-acquire-experiences/08_confirm_02.png"><br>
+
+    <ol>
+      <li>
+        If CRM Integration has been selected in the set up, then the configuration for it will appear here in the Status section, otherwise it will not appear
+      </li>
+      <li>
+        Click on <b style="color:#FFA046">edit </b><i class="fa fa-pencil" aria-hidden="true" style="color:#FFA046"></i> to configure the CRM integration
+      </li>
+      <li>
+        A CRM Settings box will appear, click on <b>Select CRM</b> and select the CRM to integrate with
+      </li>
+      <li>
+        For each CRM integration a API Key or API username will be required. Provide these details and select the Address Book you wish to push your data to. Click on <b>Save Target.</b> 
+      </li>
+      <aside class="special">
+        Once the target has been set, fields from your Experience will appear on the left and the Dotmailer fields will appear on the right
+      </aside>
+      <li>Choose which fields you would like to map by clicking on the 
+        <i class="fa  fa-plus" aria-hidden="true"></i> button and select the field from the dropdown list. Do the same for the Dotmailer fields.
+      </li>
+      <li>
+        To remove a field from the integration, click on <i class="fa fa-trash" aria-hidden="true" style="color:#FFA046"></i>. Otherwise click on <b>Save</b> to save changes
+      </li>
+    </ol>
+
+    <p><b>Advanced Options</b><br>
+      This section allows you to set up a Data Deletion process and Analytics Integration
+    </p>
+    <img src="./img/getting-started-with-acquire-experiences/08_confirm_03.png"><br><br>
+
+    <i>Data Deletion setup</i><br>
+
+    <ol>
+      <li>
+        To get started with the data deletion process, click on the <b>Set</b> button
+      </li>
+      <li>
+        The options will drop down; select if you wish to delete data from the Experience after it has been pushed to the CRM <i>OR</i> to delete data at a set frequency of days, weeks, months and years
+      </li><br>
+      <img src="./img/getting-started-with-acquire-experiences/08_confirm_05.png"><br><br>
+      <li>
+        To delete data after it is pushed to CRM, select the radio button
+      </li>
+      <li>
+        To delete data on a daily/weekly/monthly or annually, select the radio button and choose the frequency of deletion from the dropdown list
+      </li>
+      <li>
+        Which ever Data Deletion process you have selected, you must select at least one field to delete. To do this, simply check the box of the fields to delete.
+      </li>
+      <li>
+        Once you have reviewed, click on the <b>Confirm</b> button.
+      </li>
+    </ol>
+
+    <i>Analytics Integration setup</i><br>
+
+    <ol>
+      <li>
+        To set up Analytics Integration, click on the <b>Enter Script</b> button.
+      </li>
+      <li>
+        A text box will appear, put your tracking script in the box provided.
+      </li>
+      <li>
+        Click on the <b>Save</b> button.
+      </li>
+    </ol>
+
+    <p>
+      <b>Publish Options - </b><i>Popup Example</i><br>
+    </p>
+
+    <ol>
+      <li>
+        To setup a popup, click on the Popup option. A box will appear containing the code required to enable the popup. Click on <b>Setup.</b> <br><br>
+      </li>
+      <img src="./img/getting-started-with-acquire-experiences/08_confirm_06.png"> <br><br>
+      <li>
+        A both will appear where the settings can be set. Choose the settings for the popup, review and save by clicking <b>Save</b>. Otherwise click <b>Cancel</b> to cancel setting up. <br> <br>
+      </li>
+      <img src="./img/getting-started-with-acquire-experiences/08_confirm_07.png">
+      <aside class="special">
+        Follow the same steps for iFrame and Facebook, note that the settings choices are different for each publishing option.      
+      </aside>
+    </ol>
+
+    </google-codelab-step>
+
+
+  </google-codelab>
+  <!-- ANALYTICS -->
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+    ga('create', 'UA-121427912-1', 'auto');
+    
+    (function(){
+      var codelab = document.querySelector('google-codelab');
+      codelab.addEventListener('codelab-step-changed', function(e) {
+        ga('send', {
+          hitType: 'pageview',
+          title: e.detail.step.title,
+          page: '#' + e.detail.step.id
+        });
+      });
+    })();
+  </script>
+    
+  </body>
+</html>
